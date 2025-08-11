@@ -1,0 +1,16 @@
+<form action="http://127.0.0.1:5000/upload-profile-pic" method="POST" enctype="multipart/form-data">
+    <input type="file" name="profile_image" accept="image/*" />
+    <input type="text" name="user_id" value="1" />
+    <button type="submit">Upload</button>
+  </form>
+
+  <form action="http://127.0.0.1:5000/edit-profile-pic" method="POST" enctype="multipart/form-data">
+    <input type="file" name="profile_image" accept="image/*" />
+    <input type="text" name="user_id" value="1" />
+    <button type="submit">Edit</button>
+  </form>
+
+  <form action="http://127.0.0.1:5000/delete-profile-pic" method="POST">
+    <input type="text" name="user_id" value="1" />
+    <button type="submit">Delete</button>
+  </form>
