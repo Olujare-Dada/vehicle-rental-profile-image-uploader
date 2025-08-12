@@ -10,6 +10,8 @@ def create_app():
     return app
 
 
+# Create the app instance for gunicorn
+app = create_app()
+
 if __name__ == '__main__':
-    app = create_app()
     app.run(host=AppConfig().flask_host, port=AppConfig().flask_port)
